@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>
+    <%= json.project.title %>
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Safari, you're the worst -->
+  <meta name='format-detection' content='telephone=no'>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <%= t.include("partials/_head.html") %>
+</head>
+
+<body>
+
+  <responsive-child class="map-container">
+    <div class="outmost">
+      <section class="chatter">
+        <h1 class="graphic-hed">State reopening by
+          county</h1>
+        <p class="graphic-chatter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat aliquam lectus vitae porttitor. Donec euismod sem dui, ac gravida sem mattis sed. Fusce porttitor accumsan sem elementum convallis. Nam id augue lobortis, laoreet magna non,
+          sodales risus.</p>
+      </section>
+
+      <div class="aspect-ratio-outer">
+
+        <aside class="legend">
+          <h2 class="legend-hed">Reopening phases</h2>
+          <ul class="scale">
+            <li>
+              <div class="block" style="background-color: #ab5928"></div>
+                <p>Phase 1</p>
+            </li>
+         <li>
+              <span class="block" style="background-color: #ea8229"></span>
+              <p>Phase 2</p>
+            </li>
+         <li>
+              <span class="block" style="background-color: #f4bd71"></span>
+              <p>Phase 3</p>
+            </li>
+        <li>
+              <span class="block" style="background-color: #fadcbb"></span>
+              <p>Phase 4</p>
+            </li>
+        <li>
+              <span class="block" style="border: solid black"></span>
+              <p>Eligible to apply to the next phase</p>
+            </li>
+          </ul>
+        </aside>
+
+        <div class="aspect-ratio-inner">
+          
+
+          <leaflet-map zoom=7>
+            <tile-layer layer="cartoPositron"></tile-layer>
+
+          </leaflet-map>
+
+        </div>
+      </div>
+
+      <div class="caption-container">
+        <div class="data-source">Source: Office of the Governor</div>
+        <div class="art-credit">Emily M. Eng and Yasmeen Wafai / The Seattle Times</div>
+      </div>
+  </responsive-child>
+  <script>
+        window.course = <%= JSON.stringify(json.countyPhaseTracker_phase.sheet) %>;
+  </script>
+
+  <script src="app.js"></script>
+  <%= t.include("partials/_workHere.html") %>
+</body>
+
+</html>
