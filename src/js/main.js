@@ -38,18 +38,18 @@ if (mapElement) {
   // });
 
 
-//   var onEachFeature = function(feature, layer) {
-//     layer.bindPopup(ich.popup(feature.properties))
-//     layer.on({
-//       mouseover: function(e) {
-//         layer.setStyle({ weight: 2, fillOpacity: .8 });
-//       },
-//       mouseout: function(e) {
-//         if (focused && focused == layer) { return }
-//         layer.setStyle({ weight: 1, fillOpacity: 0.6 });
-//       }
-//     });
-//   };
+  var onEachFeature = function(feature, layer) {
+    layer.bindPopup(ich.popup(feature.properties))
+    layer.on({
+      mouseover: function(e) {
+        layer.setStyle({ weight: 2, fillOpacity: .8 });
+      },
+      mouseout: function(e) {
+        if (focused && focused == layer) { return }
+        layer.setStyle({ weight: 1, fillOpacity: 0.6 });
+      }
+    });
+  };
 
   var getColor = function(d) {
     var value = d[all];
