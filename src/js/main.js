@@ -20,8 +20,6 @@ if (mapElement) {
   var L = mapElement.leaflet;
   var map = mapElement.map;
 
-  map.scrollWheelZoom.disable();
-
   var focused = false;
 
   var all = "phase";
@@ -38,44 +36,62 @@ if (mapElement) {
   // });
 
 
-  var onEachFeature = function(feature, layer) {
-    layer.bindPopup(ich.popup(feature.properties))
-    layer.on({
-      mouseover: function(e) {
-        layer.setStyle({ weight: 2, fillOpacity: .8 });
-      },
-      mouseout: function(e) {
-        if (focused && focused == layer) { return }
-        layer.setStyle({ weight: 1, fillOpacity: 0.6 });
-      }
-    });
-  };
+//   var onEachFeature = function(feature, layer) {
+//     layer.bindPopup(ich.popup(feature.properties))
+//     layer.on({
+//       mouseover: function(e) {
+//         layer.setStyle({ weight: 2, fillOpacity: .8 });
+//       },
+//       mouseout: function(e) {
+//         if (focused && focused == layer) { return }
+//         layer.setStyle({ weight: 1, fillOpacity: 0.6 });
+//       }
+//     });
+//   };
 
   var getColor = function(d) {
-    var value = d[all];
+    var value = window.phaseMap[d.JURLBL].phase;
+
+    if (typeof value == "string") {
+      value = Number(value.replace(/,/, ""));
+    }
+
+    // console.log(value)
+    if (typeof value != "undefined") {
+      // condition ? if-true : if-false;
+     return value >= 4 ? '#fadcbb' :
+            value >= 3 ? '#f4bd71' :
+            value >= 2 ? '#ea8229' :
+             
+             '#ab5928' ;
+    } else {
+      return "gray"
+    }
+  };
+
+  var getStroke = function(d) {
+    var value = window.phaseMap[d.JURLBL].eligible;
+
     if (typeof value == "string") {
       value = Number(value.replace(/,/, ""));
     }
     // console.log(value)
     if (typeof value != "undefined") {
       // condition ? if-true : if-false;
-     return value >= 4 ? '#B22118' :
-            value >= 3 ? '#ED8A52' :
-            value >= 2 ? '#F4BD6E' :
-             
-             '#FAE2C1' ;
+     return value >= 1 ? '#000' :
+             '#fff' ;
     } else {
-      return "gray"
+      return "white"
     }
   };
 
   var style = function(feature) {
     var s = {
       fillColor: getColor(feature.properties),
-      weight: 1,
-      opacity: .25,
-      color: '#000',
-      fillOpacity: 0.6
+      weight: 2,
+      opacity: .75,
+      color: getStroke(feature.properties),
+      fillOpacity: 0.7
     };
     return s;
   }
@@ -84,11 +100,13 @@ if (mapElement) {
     style: style,
     onEachFeature: onEachFeature
   }).addTo(map);
-
 }
 
 var onEachFeature = function(feature, layer) {
   layer.bindPopup(ich.popup(feature.properties))
 };
 
+
  map.scrollWheelZoom.disable();
+
+ map.setView([47.2, -120.9], 7);

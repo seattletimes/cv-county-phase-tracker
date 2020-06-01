@@ -69,7 +69,11 @@
       </div>
   </responsive-child>
   <script>
-        window.phase = <%= JSON.stringify(json.countyPhaseTracker_phase.sheet) %>;
+        window.phase = <%= JSON.stringify(json.countyPhaseTracker_phase) %>;
+        window.phaseMap = {};
+        for (value of window.phase) {
+          window.phaseMap[value.county] = value;
+        }
   </script>
 
   <script src="app.js"></script>

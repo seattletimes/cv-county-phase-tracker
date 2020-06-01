@@ -1,4 +1,7 @@
 @import "seattletimes";
+@import "leaflet-tweaks";
+@import "legend";
+
 @aspect-ratio: 7/10;
 @legend-length: 5; //number of legend items
 
@@ -6,7 +9,7 @@ body {
   font-family: @df-sans;
   padding: 0;
   margin: 0 auto;
-  max-width: 630px;
+  max-width: 830px;
   font-size: 16px;
 }
 .outmost {
@@ -51,6 +54,10 @@ body {
   display: block;
 }
 
-@import "leaflet-tweaks";
-@import "legend";
-@import "popup";
+
+.countryLabel{
+  background: rgba(255, 255, 255, 0);
+  border: 0;
+  border-radius: 0px;
+  box-shadow: 0 0px 0px;
+}
