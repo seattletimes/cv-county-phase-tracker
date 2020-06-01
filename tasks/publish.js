@@ -54,10 +54,10 @@ module.exports = function(grunt) {
 
     deploy = deploy || "stage";
 
-    if (deploy == "live" && !config.production) {
-      var checklist = grunt.file.read("tasks/checklist.txt");
-      grunt.fail.fatal(checklist);
-    }
+    // if (deploy == "live" && !config.production) {
+    //   var checklist = grunt.file.read("tasks/checklist.txt");
+    //   grunt.fail.fatal(checklist);
+    // }
 
     var bucketConfig = deploy != "simulated" ? config.s3[deploy] : {
       path: "SIMULATION"
