@@ -20,6 +20,8 @@ if (mapElement) {
   var L = mapElement.leaflet;
   var map = mapElement.map;
 
+  map.scrollWheelZoom.disable();
+
   var focused = false;
 
   var all = "phase";
@@ -36,18 +38,26 @@ if (mapElement) {
   // });
 
 
-//   var onEachFeature = function(feature, layer) {
-//     layer.bindPopup(ich.popup(feature.properties))
-//     layer.on({
-//       mouseover: function(e) {
-//         layer.setStyle({ weight: 2, fillOpacity: .8 });
-//       },
-//       mouseout: function(e) {
-//         if (focused && focused == layer) { return }
-//         layer.setStyle({ weight: 1, fillOpacity: 0.6 });
-//       }
-//     });
-//   };
+  var onEachFeature = function(feature, layer) {
+    layer.bindTooltip(
+        feature.properties.JURLBL,
+        {
+            'className': "county-tooltip",
+            'permanent': true,
+            'interactive': true,
+            'direction': "center",
+        });
+    // layer.bindPopup(ich.popup(feature.properties))
+    layer.on({
+    //   mouseover: function(e) {
+    //     layer.setStyle({ weight: 2, fillOpacity: .8 });
+    //   },
+    //   mouseout: function(e) {
+    //     if (focused && focused == layer) { return }
+    //     layer.setStyle({ weight: 1, fillOpacity: 0.6 });
+    //   }
+    });
+  };
 
   var getColor = function(d) {
     var value = window.phaseMap[d.JURLBL].phase;
@@ -102,11 +112,9 @@ if (mapElement) {
   }).addTo(map);
 }
 
-var onEachFeature = function(feature, layer) {
-  layer.bindPopup(ich.popup(feature.properties))
-};
-
+// var onEachFeature = function(feature, layer) {
+//     layer.bindPopup(ich.popup(feature.properties))
+//   };
 
  map.scrollWheelZoom.disable();
-
  map.setView([47.2, -120.9], 7);
