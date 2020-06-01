@@ -72,6 +72,7 @@ if (mapElement) {
      return value >= 4 ? '#fadcbb' :
             value >= 3 ? '#f4bd71' :
             value >= 2 ? '#ea8229' :
+            value >= 1.5 ? '#6c6763' :
              
              '#ab5928' ;
     } else {
