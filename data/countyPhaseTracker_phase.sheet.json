@@ -64,8 +64,9 @@
     "phase": 2
   },
   {
-    "county": "King",
-    "phase": 1.5
+    "county": "King*",
+    "phase": 1,
+    "eligible": 1
   },
   {
     "county": "Kitsap",
@@ -121,7 +122,8 @@
   },
   {
     "county": "Snohomish",
-    "phase": 1
+    "phase": 1,
+    "eligible": 1
   },
   {
     "county": "Spokane",
