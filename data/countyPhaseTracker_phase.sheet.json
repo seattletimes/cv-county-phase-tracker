@@ -1,11 +1,13 @@
 [
   {
     "county": "Adams",
-    "phase": 2
+    "phase": 2,
+    "eligible": 1
   },
   {
     "county": "Asotin",
-    "phase": 2
+    "phase": 2,
+    "eligible": 1
   },
   {
     "county": "Benton",
@@ -17,19 +19,21 @@
   },
   {
     "county": "Clallam",
-    "phase": 2
+    "phase": 2,
+    "eligible": 1
   },
   {
     "county": "Clark",
-    "phase": 1
+    "phase": 2
   },
   {
     "county": "Columbia",
-    "phase": 2
+    "phase": 3
   },
   {
     "county": "Cowlitz",
-    "phase": 2
+    "phase": 2,
+    "eligible": 1
   },
   {
     "county": "Douglas",
@@ -37,7 +41,7 @@
   },
   {
     "county": "Ferry",
-    "phase": 2
+    "phase": 3
   },
   {
     "county": "Franklin",
@@ -45,113 +49,129 @@
   },
   {
     "county": "Garfield",
-    "phase": 2
+    "phase": 3
   },
   {
     "county": "Grant",
-    "phase": 2
+    "phase": 2,
+    "eligible": 1
   },
   {
     "county": "Grays Harbor",
-    "phase": 2
+    "phase": 2,
+    "eligible": 1
   },
   {
     "county": "Island",
-    "phase": 2
+    "phase": 2,
+    "eligible": 1
   },
   {
     "county": "Jefferson",
-    "phase": 2
+    "phase": 2,
+    "eligible": 1
   },
   {
-    "county": "King*",
-    "phase": 1,
-    "eligible": 1
+    "county": "King",
+    "phase": 1.5
   },
   {
     "county": "Kitsap",
-    "phase": 2
-  },
-  {
-    "county": "Kittitas",
-    "phase": 2
-  },
-  {
-    "county": "Klickitat",
-    "phase": 2
-  },
-  {
-    "county": "Lewis",
-    "phase": 2
-  },
-  {
-    "county": "Lincoln",
-    "phase": 2
-  },
-  {
-    "county": "Mason",
-    "phase": 2
-  },
-  {
-    "county": "Okanogan",
-    "phase": 1
-  },
-  {
-    "county": "Pacific",
-    "phase": 2
-  },
-  {
-    "county": "Pend Oreille",
-    "phase": 2
-  },
-  {
-    "county": "Pierce",
-    "phase": 1
-  },
-  {
-    "county": "San Juan",
-    "phase": 2
-  },
-  {
-    "county": "Skagit",
-    "phase": 1
-  },
-  {
-    "county": "Skamania",
-    "phase": 2
-  },
-  {
-    "county": "Snohomish",
-    "phase": 1,
+    "phase": 2,
     "eligible": 1
   },
   {
-    "county": "Spokane",
+    "county": "Kittitas",
+    "phase": 2,
+    "eligible": 1
+  },
+  {
+    "county": "Klickitat",
+    "phase": 2,
+    "eligible": 1
+  },
+  {
+    "county": "Lewis",
+    "phase": 2,
+    "eligible": 1
+  },
+  {
+    "county": "Lincoln",
+    "phase": 3
+  },
+  {
+    "county": "Mason",
+    "phase": 2,
+    "eligible": 1
+  },
+  {
+    "county": "Okanogan",
     "phase": 2
+  },
+  {
+    "county": "Pacific",
+    "phase": 2,
+    "eligible": 1
+  },
+  {
+    "county": "Pend Oreille",
+    "phase": 3
+  },
+  {
+    "county": "Pierce",
+    "phase": 2
+  },
+  {
+    "county": "San Juan",
+    "phase": 2,
+    "eligible": 1
+  },
+  {
+    "county": "Skagit",
+    "phase": 2
+  },
+  {
+    "county": "Skamania",
+    "phase": 2,
+    "eligible": 1
+  },
+  {
+    "county": "Snohomish",
+    "phase": 2
+  },
+  {
+    "county": "Spokane",
+    "phase": 2,
+    "eligible": 1
   },
   {
     "county": "Stevens",
-    "phase": 2
+    "phase": 3,
+    "eligible": 1
   },
   {
     "county": "Thurston",
-    "phase": 2
+    "phase": 2,
+    "eligible": 1
   },
   {
     "county": "Wahkiakum",
-    "phase": 2
+    "phase": 3,
+    "eligible": 1
   },
   {
     "county": "Walla Walla",
-    "phase": 2
+    "phase": 2,
+    "eligible": 1
   },
   {
     "county": "Whatcom",
-    "phase": 1
+    "phase": 2
   },
   {
     "county": "Whitman",
-    "phase": 2
+    "phase": 2,
+    "eligible": 1
   },
   {
     "county": "Yakima",
