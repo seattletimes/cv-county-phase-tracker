@@ -70,11 +70,11 @@ if (mapElement) {
     if (typeof value != "undefined") {
       // condition ? if-true : if-false;
      return value >= 4 ? '#fadcbb' :
-            value >= 3 ? '#f4bd71' :
-            value >= 2 ? '#ea8229' :
+            value >= 3 ? '#eda23e' :
+            value >= 2 ? '#d86d16' :
             value >= 1.5 ? '#6c6763' :
              
-             '#ab5928' ;
+             '#ad471f' ;
     } else {
       return "gray"
     }

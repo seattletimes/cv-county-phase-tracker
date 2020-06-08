@@ -1,13 +1,11 @@
 [
   {
     "county": "Adams",
-    "phase": 2,
-    "eligible": 1
+    "phase": 2
   },
   {
     "county": "Asotin",
-    "phase": 2,
-    "eligible": 1
+    "phase": 2
   },
   {
     "county": "Benton",
@@ -19,8 +17,7 @@
   },
   {
     "county": "Clallam",
-    "phase": 2,
-    "eligible": 1
+    "phase": 2
   },
   {
     "county": "Clark",
@@ -32,8 +29,7 @@
   },
   {
     "county": "Cowlitz",
-    "phase": 2,
-    "eligible": 1
+    "phase": 2
   },
   {
     "county": "Douglas",
@@ -53,23 +49,19 @@
   },
   {
     "county": "Grant",
-    "phase": 2,
-    "eligible": 1
+    "phase": 2
   },
   {
     "county": "Grays Harbor",
-    "phase": 2,
-    "eligible": 1
+    "phase": 2
   },
   {
     "county": "Island",
-    "phase": 2,
-    "eligible": 1
+    "phase": 2
   },
   {
     "county": "Jefferson",
-    "phase": 2,
-    "eligible": 1
+    "phase": 2
   },
   {
     "county": "King",
@@ -77,23 +69,19 @@
   },
   {
     "county": "Kitsap",
-    "phase": 2,
-    "eligible": 1
+    "phase": 2
   },
   {
     "county": "Kittitas",
-    "phase": 2,
-    "eligible": 1
+    "phase": 2
   },
   {
     "county": "Klickitat",
-    "phase": 2,
-    "eligible": 1
+    "phase": 2
   },
   {
     "county": "Lewis",
-    "phase": 2,
-    "eligible": 1
+    "phase": 2
   },
   {
     "county": "Lincoln",
@@ -101,8 +89,7 @@
   },
   {
     "county": "Mason",
-    "phase": 2,
-    "eligible": 1
+    "phase": 2
   },
   {
     "county": "Okanogan",
@@ -110,8 +97,7 @@
   },
   {
     "county": "Pacific",
-    "phase": 2,
-    "eligible": 1
+    "phase": 2
   },
   {
     "county": "Pend Oreille",
@@ -123,8 +109,7 @@
   },
   {
     "county": "San Juan",
-    "phase": 2,
-    "eligible": 1
+    "phase": 2
   },
   {
     "county": "Skagit",
@@ -141,28 +126,23 @@
   },
   {
     "county": "Spokane",
-    "phase": 2,
-    "eligible": 1
+    "phase": 2
   },
   {
     "county": "Stevens",
-    "phase": 3,
-    "eligible": 1
+    "phase": 3
   },
   {
     "county": "Thurston",
-    "phase": 2,
-    "eligible": 1
+    "phase": 2
   },
   {
     "county": "Wahkiakum",
-    "phase": 3,
-    "eligible": 1
+    "phase": 3
   },
   {
     "county": "Walla Walla",
-    "phase": 2,
-    "eligible": 1
+    "phase": 2
   },
   {
     "county": "Whatcom",
