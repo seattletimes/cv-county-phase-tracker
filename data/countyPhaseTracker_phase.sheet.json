@@ -5,7 +5,7 @@
   },
   {
     "county": "Asotin",
-    "phase": 2
+    "phase": 3
   },
   {
     "county": "Benton",
@@ -13,7 +13,7 @@
   },
   {
     "county": "Chelan",
-    "phase": 1
+    "phase": 1.5
   },
   {
     "county": "Clallam",
@@ -33,7 +33,7 @@
   },
   {
     "county": "Douglas",
-    "phase": 1
+    "phase": 1.5
   },
   {
     "county": "Ferry",
@@ -150,8 +150,7 @@
   },
   {
     "county": "Whitman",
-    "phase": 2,
-    "eligible": 1
+    "phase": 3
   },
   {
     "county": "Yakima",
