@@ -8,7 +8,7 @@
     "phase": 3
   },
   {
-    "county": "Benton",
+    "county": "Benton*",
     "phase": 1
   },
   {
@@ -40,7 +40,7 @@
     "phase": 3
   },
   {
-    "county": "Franklin",
+    "county": "Franklin*",
     "phase": 1
   },
   {
@@ -53,11 +53,11 @@
   },
   {
     "county": "Grays Harbor",
-    "phase": 2
+    "phase": 3
   },
   {
     "county": "Island",
-    "phase": 2
+    "phase": 3
   },
   {
     "county": "Jefferson",
@@ -65,7 +65,7 @@
   },
   {
     "county": "King",
-    "phase": 1.5
+    "phase": 2
   },
   {
     "county": "Kitsap",
@@ -73,7 +73,7 @@
   },
   {
     "county": "Kittitas",
-    "phase": 2
+    "phase": 3
   },
   {
     "county": "Klickitat",
@@ -81,7 +81,7 @@
   },
   {
     "county": "Lewis",
-    "phase": 2
+    "phase": 3
   },
   {
     "county": "Lincoln",
@@ -89,7 +89,7 @@
   },
   {
     "county": "Mason",
-    "phase": 2
+    "phase": 3
   },
   {
     "county": "Okanogan",
@@ -97,7 +97,7 @@
   },
   {
     "county": "Pacific",
-    "phase": 2
+    "phase": 3
   },
   {
     "county": "Pend Oreille",
@@ -117,8 +117,7 @@
   },
   {
     "county": "Skamania",
-    "phase": 2,
-    "eligible": 1
+    "phase": 3
   },
   {
     "county": "Snohomish",
@@ -134,7 +133,7 @@
   },
   {
     "county": "Thurston",
-    "phase": 2
+    "phase": 3
   },
   {
     "county": "Wahkiakum",
@@ -153,7 +152,7 @@
     "phase": 3
   },
   {
-    "county": "Yakima",
+    "county": "Yakima*",
     "phase": 1
   }
 ]
