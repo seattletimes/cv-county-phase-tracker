@@ -8,8 +8,8 @@
     "phase": 3
   },
   {
-    "county": "Benton*",
-    "phase": 1
+    "county": "Benton",
+    "phase": 1.5
   },
   {
     "county": "Chelan",
@@ -40,8 +40,8 @@
     "phase": 3
   },
   {
-    "county": "Franklin*",
-    "phase": 1
+    "county": "Franklin",
+    "phase": 1.5
   },
   {
     "county": "Garfield",
@@ -152,7 +152,7 @@
     "phase": 3
   },
   {
-    "county": "Yakima*",
-    "phase": 1
+    "county": "Yakima",
+    "phase": 1.5
   }
 ]
